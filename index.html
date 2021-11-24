@@ -7,13 +7,13 @@ color:green;
 }
 </style>
 <body onload="add();dd();">
-<h4>Click inside the canvas to get started <br><span>Canvas 1 - </span> is without fabric.js <br><span>Canvas 2 - </span> isWith fabric.js</h4>
-<h4><span>Canvas 1 - </span><br>Use <span>A</span> for going left<br> Use <span>W</span> for going up<br> Use <span>D</span> for going right<br> Use <span>S</span> for going down</h4> 
+<h4>Clique dentro do canas para iniciar <br><span>Canvas 1 - </span> não possui fabric.js <br><span>Canvas 2 - </span> possui fabric.js</h4>
+<h4><span>Canvas 1 - </span><br>Utilize <span>A</span> para a direção Esquerda<br> Utilize <span>W</span> para a direção Cima<br> Utilize <span>D</span> para a direção Direita<br> Utilize <span>S</span> para a direção Baixo</h4> 
 <canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
 </canvas>
 <br>
 
-<h4><span>Canvas 2 - </span><br>Use <span>Left arrow key</span> for going left<br> Use <span>Up arrow key</span> for going up<br> Use <span>Right arrow key</span> for going right<br> Use <span>Down arrow key</span> for going down</h4> 
+<h4><span>Canvas 2 - </span><br>Utilize <span>a tecla dorecional Esquerda</span> para a direção Esquerda<br> Utilize <span>a tecla direcional cima</span> para a direção Cima<br> Utilize <span>a tecla direcional Direita</span> para a direção Direita<br> Utilize <span>a tecla direcional Baixo</span> para a direção Baixo</h4> 
 <canvas id="myCanvas1" width="600" height="400" style="border:1px solid #000000;">
 </canvas>
 
@@ -23,9 +23,9 @@ ctx = canvas.getContext("2d");
 x = 10;
 y = 10;
 function add() {
-	background_imgTag = new Image(); //defining a variable with a new image
-	background_imgTag.onload = uploadBackground; // setting a function, onloading this variable
-	background_imgTag.src = "player.png";   // load image
+	background_imgTag = new Image(); //definie uma variável com uma nova imagem
+	background_imgTag.onload = uploadBackground; // ajusta uma função, ao carregar essa variável
+	background_imgTag.src = "player.png";   // carrega a imagem
 }
 
 function uploadBackground() {
